@@ -1,0 +1,8 @@
+prefix=/home/mato/workspace/youBot-PickNPlace/Ros_Workspace/playGround/devel
+
+Name: beginner_tutorials
+Description: Description of beginner_tutorials
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mato/workspace/youBot-PickNPlace/Ros_Workspace/playGround/devel/lib 
+Requires: 
