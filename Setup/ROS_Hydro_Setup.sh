@@ -18,3 +18,6 @@ echo "source /opt/ros/hydro/setup.bash" >> ~/.bashrc
 
 #Getting rosinstall
 apt-get install -y python-rosinstall
+
+#.ros change owner
+chown -R $USER:$USER ~/.ros
