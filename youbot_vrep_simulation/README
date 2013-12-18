@@ -1,0 +1,16 @@
+1. Run roscore
+2. Run vrep.sh
+3. Load youbotSim.ttt: File>Open scene>youbotSim.ttt
+4. Start simulation: Simulation>Start simulation
+
+Test command:
+rostopic pub -1 /vrep/ArmJoint1 std_msgs/Float32 -- 0
+rostopic echo /vrep/ArmJoint1_State
+
+Rad range:
+joint1: -2.949 ~ 2.949
+joint2: 1.134 ~ -1.573
+joint3: -2.547 ~ 2.631
+joint4: 1.78 ~ -1.78
+joint5: -2.923 ~ 2.923
+ 
