@@ -1,0 +1,59 @@
+youbot ip:
+single arm: 192.168.50.77
+dual arm: 192.168.50.76
+
+rostopic list -v
+
+Published topics:
+ * /arm_1/arm_controller/follow_joint_trajectory/feedback [control_msgs/FollowJointTrajectoryActionFeedback] 1 publisher
+ * /arm_1/arm_controller/follow_joint_trajectory/result [control_msgs/FollowJointTrajectoryActionResult] 1 publisher
+ * /joint_states [sensor_msgs/JointState] 1 publisher
+ * /rosout [rosgraph_msgs/Log] 2 publishers
+ * /tf [tf/tfMessage] 2 publishers
+ * /odom [nav_msgs/Odometry] 1 publisher
+ * /rosout_agg [rosgraph_msgs/Log] 1 publisher
+ * /dashboard/platform_state [pr2_msgs/PowerBoardState] 1 publisher
+ * /diagnostics [diagnostic_msgs/DiagnosticArray] 1 publisher
+ * /arm_1/arm_controller/follow_joint_trajectory/status [actionlib_msgs/GoalStatusArray] 1 publisher
+
+Subscribed topics:
+ * /joint_states [sensor_msgs/JointState] 1 subscriber
+ * /arm_1/arm_controller/position_command [brics_actuator/JointPositions] 1 subscriber
+ * /rosout [rosgraph_msgs/Log] 1 subscriber
+ * /arm_1/gripper_controller/position_command [brics_actuator/JointPositions] 1 subscriber
+ * /arm_1/arm_controller/follow_joint_trajectory/goal [control_msgs/FollowJointTrajectoryActionGoal] 1 subscriber
+ * /arm_1/arm_controller/velocity_command [brics_actuator/JointVelocities] 1 subscriber
+ * /arm_1/arm_controller/follow_joint_trajectory/cancel [actionlib_msgs/GoalID] 1 subscriber
+ * /cmd_vel [geometry_msgs/Twist] 1 subscriber
+
+
+rostopic echo /joint_states
+
+header: 
+  seq: 146159
+  stamp: 
+    secs: 1386681219
+    nsecs: 973303331
+  frame_id: ''
+name: ['arm_joint_1', 'arm_joint_2', 'arm_joint_3', 'arm_joint_4', 'arm_joint_5', 'gripper_finger_joint_l', 'gripper_finger_joint_r']
+position: [2.949613148675232, 1.352002523045369, -2.590997125121646, 0.09999999150863285, 0.002942477626249595, 0.0, 0.0]
+velocity: [-0.0, -0.0, 0.0, -0.0, -0.0, 0.0, 0.0]
+effort: []
+
+
+Range:
+joint 1: between 0.0100692 and 5.84014
+joint 2: between 0.0100692 and 2.61799
+joint 3: between -5.02655 and -0.015708
+joint 4: between 0.0221239 and 3.4292
+joint 5: between 0.110619 and 5.64159
+left gripper finger: between 0 and 0.0115
+right gripper finger: between 0 and 0.0115
+
+	|
+	|
+	|
+      ____
+  _________
+
+2.9 1.1 -2.5 1.7 3 0 0

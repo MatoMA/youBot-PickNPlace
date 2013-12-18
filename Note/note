@@ -1,0 +1,12 @@
+some youbot_description
+https://github.com/Arn-O/youbot_ros_tools.git
+https://github.com/micpalmia/youbot_ros_tools.git
+
+youbotGroovyPackages
+https://github.com/WPI-RAIL
+
+gazebosim setup
+http://gazebosim.org/wiki/Tutorials/1.9/Installing_gazebo_ros_Packages
+
+moveit
+http://wiki.ros.org/Industrial/Tutorials/Create_a_MoveIt_Pkg_for_an_Industrial_Robot
